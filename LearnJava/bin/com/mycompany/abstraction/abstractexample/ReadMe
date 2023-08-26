@@ -1,0 +1,13 @@
+Use an abstract class when you want to 
+
+1) provide a common base implementation for multiple related classes.
+2) define default behavior that can be shared among subclasses.
+3) provide a partial implementation of a class and leave certain methods to be implemented by subclasses.
+4) have constructor(s) or instance variables in the class.
+5) create a hierarchy of classes, where the abstract class represents a more general concept and the subclasses represent specific variations or extensions of that concept.
+
+Abstract class vs regular parent class
+
+Instantiation: An abstract class cannot be instantiated directly, meaning you cannot create objects of an abstract class using the new keyword. In contrast, a regular parent class can be instantiated, and objects of the parent class can be created.
+Incomplete Definition: Abstract classes are often used when the class itself represents an incomplete concept or is meant to be extended by subclasses to provide specific implementations. Regular parent classes, on the other hand, typically provide a complete implementation and may not be intended for direct extension.
+Partial Abstraction: Abstract classes can contain a mixture of abstract and non-abstract methods, allowing for partial abstraction. Some methods can have a concrete implementation in the abstract class, while others can be left abstract to be implemented by the subclasses. Regular parent classes typically provide a complete implementation and don't involve partial abstraction.
