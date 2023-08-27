@@ -20,6 +20,10 @@ public class UnaryOperatorsPlus {
 		result = +b;
 		System.out.println("After unary plus operation result is " + result);
 
+		
+		result = -b;
+		System.out.println("After unary minus operation result is " + result);
+		
 		// If there is no change of value why we use it?
 
 		// 1. explicitly indicate the positive sign of a numeric value

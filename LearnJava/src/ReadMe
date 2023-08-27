@@ -22,15 +22,16 @@ Day 2:
 ==========================================
 Do while
 When to use For,While, do while
-Different types of primitives,Primitives conversions(Integer to String etc)
 Classes and Objects creation
 Constructor(Default,All argument constructor)
+Different types of primitives,Primitives conversions(Integer to String etc)
 Primitives vs wrapper classes and conversion(Auto boxing and unboxing)
 Operators:
-	Assignment Operator(=)
+	
 	Arithmetic Operator(+, -, *, /, %)
-	Unary Operator(+, -, ++, --, !)
 	Relational Operator(==, !=, >, >=, <, <=)
+	Assignment Operator(=)
+	Unary Operator(+, -, ++, --, !)	
 	Conditional Operator((&&, ||))	
 String Operations(subString,IndexOf,Split,compareTo,Equals,EqualsIgnoreCase,ReplaceAll,ReplaceFirst)	
 

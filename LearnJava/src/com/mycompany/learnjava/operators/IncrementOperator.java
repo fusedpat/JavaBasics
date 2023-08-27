@@ -7,10 +7,10 @@ public class IncrementOperator {
 		int a = 5;
 		int b = ++a;  // Pre-increment: 'a' is incremented to 6, and then 6 is assigned to 'b'
 		
-		System.out.println("a value is: " + a + " b value is:" + b);
+		System.out.println("a value is: " + a + " b value is:" + b); // Prints : 6 and 6
 		 
 		int c = a++;  // Post-increment: 'a' (6) is assigned to 'c', and then 'a' is incremented to 7
-		System.out.println("a value is: " + a + " c value is:" + c);
+		System.out.println("a value is: " + a + " c value is:" + c); // prints 7 and 6
 
 	}
 

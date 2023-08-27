@@ -17,6 +17,7 @@ public class Person {
 	// Default constructor
 	Person() {
 		// Initialization code
+		System.out.println("default constructor called");
 	}
 
 	// All Argument constructor

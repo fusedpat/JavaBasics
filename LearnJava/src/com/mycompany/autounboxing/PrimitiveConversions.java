@@ -27,7 +27,7 @@ public class PrimitiveConversions {
 		int i = Integer.parseInt(str);
 		
 
-		System.out.println(Integer.parseInt("hundered")); // will get number format exception
+		//System.out.println(Integer.parseInt("hundered")); // will get number format exception
 		
 		double d = Double.parseDouble(str2);
 		System.out.println("int value: " + i + ", double value: " + d);
@@ -35,9 +35,12 @@ public class PrimitiveConversions {
 		String str3 = Integer.toString(i);
 		System.out.println("String value: " + str3);
 		
+		// double to int
 		int intValue = (int) d;
 		
-		double doubleValue = (double) intValue;
+		double doubleValue = (double) intValue;// casting to double
+		Integer integerObject = Integer.valueOf(intValue); // Boxing
+		int intValue1 = integerObject.intValue(); // Unboxing
 
 		System.out.println("Original int value: " + intValue);
 		System.out.println("Converted double value: " + doubleValue);

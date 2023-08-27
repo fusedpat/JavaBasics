@@ -11,13 +11,20 @@ public class DecrementOperator {
 		 */
 
 		int c = 2;
+		// Prints 1
 		System.out.println("Pre decrement operator while applying -- " + --c); // decrements to 1 and assigns 1 to c
+		
+		// prints 1
 		System.out.println("Pre decrement operator after applying -- " + c);
 
 		// post increment operator
 
 		int d = 2;
+		
+		// prints 2
 		System.out.println("Post decrement operator while applying -- " + d--);// value still prints as 2 as value decrements after assigning
+		
+		// prints 1
 		System.out.println("Post decrement operator while applying -- " + d); // decremented value is visible her
 		
 		

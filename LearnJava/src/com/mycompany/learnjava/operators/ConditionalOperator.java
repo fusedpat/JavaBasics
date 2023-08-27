@@ -1,7 +1,7 @@
 package com.mycompany.learnjava.operators;
 
 import java.util.Scanner;
-
+// && ||
 public class ConditionalOperator {
 public static void main(String[] args) {
 	
@@ -21,6 +21,8 @@ public static void main(String[] args) {
     } else {
         System.out.println("Sorry, you are not eligible for any discounts.");
     }
+    
+    /*
    
     System.out.println("false & false: is " + Boolean.toString(false & false)); // false
     System.out.println("true & false: is " + Boolean.toString(true & false)); // false
@@ -32,6 +34,6 @@ public static void main(String[] args) {
     System.out.println("false | false: is " + Boolean.toString(false | false)); // false
     System.out.println("true | true: is " + Boolean.toString(true | true)); // true
     System.out.println("true | false: is " + Boolean.toString(true | false));   // true
-    	
+    	*/
 }
 }

@@ -1,5 +1,8 @@
 package com.mycompany.learnjava.operators;
 
+
+//Arithmetic Operator(+, -, *, /, %)
+//Relational Operator(==, !=, >, >=, <, <=)
 public class RelationalAndArithmeticOperators {
 
 	public static void main(String[] args) {

@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Switch {
 
 	public static void main(String[] args) {
-/*
+		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter any input integer");
+		System.out.println("Enter any input String");
 
 		String enteredValue = input.nextLine();
 
@@ -31,17 +31,16 @@ public class Switch {
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + enteredValue);
 		}
-*/
+
 		
 		for (int i = 0; i < 7; i++) {
-			if (i == 3) {
+			if (i == 1) {
 				break;
 			}
 			System.out.printf("int values is %d %d   %s \n", i, 1, "any string");
 
 		}
 		
-
 	}
 
 }

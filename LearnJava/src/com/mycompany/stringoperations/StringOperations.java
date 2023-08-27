@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class StringOperations {
 	public static void main(String args[]) {
-		
-		
+
 		String string, sub;
 		int c, length;
 		Scanner in = new Scanner(System.in);
@@ -15,6 +14,8 @@ public class StringOperations {
 
 		String subString = string.substring(0, 4);
 		System.out.println("Substrings of \"" + string + "\" are :-" + subString);
+		
+		
 
 		// compare to
 		String s1 = "hello";
@@ -22,9 +23,37 @@ public class StringOperations {
 		String s3 = "meklo";
 		String s4 = "hemlo";
 		System.out.println(s1.compareTo(s2));
-		System.out.println(s1.compareTo(s3));
+		
+		if(s1.compareTo(s2) != 0) {
+			System.out.println("string are not equal");
+		}
+		// Comparing "hello" and "meklo". The first different character encountered is
+		// 'm' - its ASCII value is greater than 'h'. So, the result is a negative value
+		// indicating that "hello" comes before "meklo" in lexicographical order. This
+		// prints a negative integer.
+		System.out.println(s1.compareTo(s3)); // lexicographically comparison ie.e which
+
+		// Comparing "hello" and "hemlo". The first different character encountered is
+		// 'e' - its ASCII value is greater than 'a'. So, the result is a positive value
+		// indicating that "hello" comes after "hemlo" in lexicographical order. This
+		// prints a positive integer.
 		System.out.println(s1.compareTo(s4));
 
+		// equals for content comparison
+		 String hello1 = "hello";
+	        String hello2 = "hello";
+	        String hello3 = new String("hello");
+	        String hello4 = "world";
+		
+		 System.out.println(hello1.equals(hello2)); // true
+	        System.out.println(hello1.equals(hello3)); // true
+	        System.out.println(hello1.equals(hello4)); // false
+		
+		// == for reference comparison, not to be used for string equality
+	        System.out.println(hello1 == hello2); // true
+	        System.out.println(hello1== hello3 ); // false
+	        System.out.println(hello1 == hello4); // false
+	        
 		// index of
 
 		String stringIndex = "this is index of example";
@@ -65,7 +94,7 @@ public class StringOperations {
 		// Concat
 		String concat = stringTrim.concat("Learning is fun");
 		System.out.println(concat);
-		
+
 		String str = "Hello World";
 
 		boolean endsWithWorld = str.endsWith("World");
@@ -74,7 +103,6 @@ public class StringOperations {
 		boolean endsWithHello = str.endsWith("Hello");
 		System.out.println(endsWithHello); // Output: false
 
-		
 		String strToDemoContains = "Hello World";
 
 		boolean containsHello = strToDemoContains.contains("Hello");
@@ -83,7 +111,6 @@ public class StringOperations {
 		boolean containsFoo = strToDemoContains.contains("Foo");
 		System.out.println(containsFoo); // Output: false
 
-		
 		String strToDemoLastIndex = "Hello World";
 
 		int lastIndexO = strToDemoLastIndex.lastIndexOf('o');
@@ -92,7 +119,6 @@ public class StringOperations {
 		int lastIndexH = strToDemoLastIndex.lastIndexOf('H');
 		System.out.println(lastIndexH); // Output: 0
 
-		
 		String strToDemoBlank = "";
 
 		boolean isBlankEmpty = strToDemoBlank.isBlank();
@@ -107,16 +133,15 @@ public class StringOperations {
 
 		boolean isBlankNonBlank = strNonBlank.isBlank();
 		System.out.println(isBlankNonBlank); // Output: false
-		
-		
+
 		String nullCheck = null;
+
+		System.out.println("not doing null check" + nullCheck.length()); //  throws null pointer.
 		
-		if(null != nullCheck) 
-		System.out.println("not doing null check" + nullCheck.length());
-		
-		
+		if (null != nullCheck)
+			System.out.println("not doing null check" + nullCheck.length());
+
 		System.out.println("bypassed null here");
 
-		
 	}
 }
