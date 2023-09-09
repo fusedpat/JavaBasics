@@ -20,7 +20,7 @@ public class Enum {
 		try {
 			// Validate user input against the Direction enum
 			Directions direction = Directions.valueOf(userInput);
-
+			
 			System.out.println("Valid direction: " + direction);
 		} catch (IllegalArgumentException e) {
 			System.out.println("Invalid direction entered. Please enter EAST, WEST, NORTH, or SOUTH.");

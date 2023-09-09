@@ -11,6 +11,12 @@ public class FinalExample {
         System.out.println("Final variable value: " + finalVariable);
     }
     
+    // non - Final method
+    public void finalMethod(String one) {
+        System.out.println("Final method called");
+        System.out.println("Final variable value: " + finalVariable);
+    }
+    
    
     
     public static void main(String[] args) {
@@ -20,17 +26,17 @@ public class FinalExample {
         System.out.println("Final variable value: " + obj.finalVariable);
         
         // Trying to modify final variable (will result in a compilation error)
-       //  obj.finalVariable = 20;
+        // obj.finalVariable = 20;
         
         // Calling final method
         obj.finalMethod();
         
         // Trying to override final method (will result in a compilation error)
-        // class SubClass extends FinalExample {
-        //    public void finalMethod() {
-        //        // Method implementation
-        //    }
-        // }
+//         class SubClass extends FinalExample {
+//            public void finalMethod() {
+//                // Method implementation
+//            }
+//         }
         
         // Creating an instance of the final class
         FinalClass finalObj = new FinalClass();

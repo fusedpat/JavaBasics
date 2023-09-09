@@ -9,7 +9,7 @@ public class EnumSwitch {
 
  public static void main(String[] args) {
      // Choose a coffee size
-     CoffeeSize coffee = CoffeeSize.MEDIUM;
+     CoffeeSize coffee = CoffeeSize.LARGE;
 
      // Use a switch statement to handle different coffee sizes
      switch (coffee) {

@@ -32,6 +32,11 @@ public class StaticExample {
 			// compilation error as we are accessing a not static varibale
 		}
 	}
+	
+	public void myNonStaticMethod() {
+		// Calling static method
+				staticMethod();
+	}
 
 	public static void main(String[] args) {
 		// Accessing static variable
