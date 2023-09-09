@@ -10,11 +10,12 @@ Methods
 Primitive data types
 Take user input using Scanner
 If/else if
+Arrays
 For
 While
 Switch
 Break
-Arrays
+
 
 
 ==========================================
@@ -39,11 +40,13 @@ String Operations(subString,IndexOf,Split,compareTo,Equals,EqualsIgnoreCase,Repl
 ==========================================
 Day 3:
 ==========================================
-Static
-Final
+Inheritance
 Access Modifier
 Enumerations
-Inheritance
+Static
+Final
+super
+
 
 ==========================================
 Day 4:

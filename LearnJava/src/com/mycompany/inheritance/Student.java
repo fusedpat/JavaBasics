@@ -12,6 +12,6 @@ public class Student extends Person {
 	// override a superclass method.
 	@Override
 	void talk() {
-		System.out.println("I am studen(subclass). and i also can talk");
+		System.out.println("I am studen(subclass). and i also can talk fluently");
 	}
 }
