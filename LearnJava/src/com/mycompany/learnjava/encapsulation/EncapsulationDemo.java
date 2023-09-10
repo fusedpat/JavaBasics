@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class EncapsulationDemo {
 	public static void main(String[] args) {
-		User user = new User("john_doe", "password123");
+		User user = new User("casdfsadfdoe", "password123");
 
 		/**
 		 * The User class encapsulates the username and password as private instance

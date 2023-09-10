@@ -5,7 +5,8 @@ public class RunTimePolymorphismDemoByAnimal {
 		// Creating instances of Animal, Dog, and Cat
 		// compiler treats them as instances of the Animal class
 		Animal animal = new Animal();
-		Animal dog = new Dog(); // Declaring Dog as Animal thats why only methods defined in Animal are accessible
+		Animal dog = new Dog(); // Declaring Dog as Animal thats why only methods defined in Animal are
+								// accessible
 		Animal cat = new Cat();
 
 		/**
@@ -21,9 +22,8 @@ public class RunTimePolymorphismDemoByAnimal {
 
 		// dog.fetch(); // This line would result in a compilation error if uncommented
 
-		 
-		 Dog dog1 = new Dog();
-		 dog1.fetch();
+		Dog dog1 = new Dog();
+		dog1.fetch();
 		/*
 		 * Advantages:
 		 * 
@@ -39,6 +39,11 @@ public class RunTimePolymorphismDemoByAnimal {
 		 * Animal, we cannot directly invoke the fetch() method on the dog object. This
 		 * restriction allows for flexibility in substituting different animal types
 		 * without affecting the code that uses the Animal reference
+		 * 
+		 * Extensibility: If you add new subclasses in the future, they can choose
+		 * whether to override the makeSound method or inherit the default behavior from
+		 * the superclass. This provides flexibility and extensibility in your class
+		 * hierarchy.
 		 * 
 		 * 
 		 */

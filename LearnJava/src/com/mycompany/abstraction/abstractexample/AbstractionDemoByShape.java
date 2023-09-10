@@ -12,6 +12,9 @@ abstract class Shape {
 class Circle extends Shape {
 	private double radius;
 
+	public Circle() {
+	}
+	
 	public Circle(double radius) {
 		this.radius = radius;
 	}
@@ -30,11 +33,14 @@ class Rectangle extends Shape {
 		this.length = length;
 		this.width = width;
 	}
-
+	public Rectangle() {
+	}
+	
 	@Override
 	public double calculateArea() {
 		return length * width;
 	}
+
 }
 
 public class AbstractionDemoByShape {
@@ -54,5 +60,16 @@ public class AbstractionDemoByShape {
 		Rectangle rectangle = new Rectangle(4, 6);
 		rectangle.display();
 		System.out.println("Area: " + rectangle.calculateArea());
+		
+		/** 
+		 * Run time polymorphsm with abstract classes
+		 */
+		Shape shape1 = new Circle();
+        Shape shape2 = new Rectangle();
+
+        shape1.display(); // Calls the display() method of Circle
+        shape2.display(); // Calls the display() method of Rectangle
+        
+        //Shape shape3 = new Shape(); // Cannot instantiate abstract class, so this will give compile time error
 	}
 }

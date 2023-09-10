@@ -16,7 +16,14 @@ class BanksAccount {
 		}
 	}
 	
-	// Below will give error as return type does no matters
+	// Below will give error as return type does not matters, only parameters should be different
+	//public String withdraw(double amount) {
+	//}
+	
+	
+	//  Below will give error as access modifiers does not matters, only parameters should be different
+	//private void withdraw(double amount) {
+		//}
 	
 	public String withdraw(double amount,double amount1,double amount2) {
 		return "nothing";
@@ -57,12 +64,12 @@ public class CompileTimePolymorphism {
 
 		/**
 		 * Rules:Method name: The methods being overloaded must have the same name.
-		 * 
+		 * R
 		 * Parameter list: The parameter lists of the methods must be different. This
 		 * can be achieved by having a different number of parameters or different types
 		 * of parameters.
 		 * 
-		 * Return type: The return type of the methods is not considered during method
+		 * Return type: The return type of the methods is <b>not</b> considered during method
 		 * overloading. Overloaded methods can have the same or different return types.
 		 * 
 		 * Access modifiers: The access modifiers (e.g., public, private, protected) and

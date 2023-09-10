@@ -1,0 +1,13 @@
+Runtime polymorphism in Java is achieved through method overriding, which allows a subclass to provide a specific implementation of a method defined in its superclass. To achieve runtime polymorphism, you need to follow certain rules and principles:
+
+Inheritance: Polymorphism requires a relationship between classes, typically achieved through inheritance. You must have a superclass (base class) and one or more subclasses (derived classes) to override methods.
+
+Method Signature: The method to be overridden in the subclass must have the same method signature (method name, return type, and parameter types) as the method in the superclass. The method signature is also known as the method's name and parameter list.
+
+Access Modifier: The overridden method in the subclass must not have a more restrictive access modifier than the method in the superclass. In other words, if the superclass method is declared as public, the overriding method in the subclass can be public or less restrictive (e.g., protected or package-private), but it cannot be more restrictive (e.g., private).
+
+Method in Superclass Should Be Non-Final: The method in the superclass that you want to override must not be declared as final, as final methods cannot be overridden.
+
+Covariant Return Types (Java 5+): Java 5 introduced covariant return types, allowing the overriding method in the subclass to have a more specific (subtype) return type than the method in the superclass. This is not considered a separate rule, but it enhances flexibility.
+
+Method in Superclass Should Be Marked for Override (Optional): You can use the @Override annotation to explicitly indicate that a method in the subclass is intended to override a method in the superclass. While this is not required, it helps catch errors at compile-time if there is a mismatch in method signatures.

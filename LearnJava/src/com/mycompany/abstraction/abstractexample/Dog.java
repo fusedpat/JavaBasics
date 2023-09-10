@@ -4,6 +4,7 @@ public class Dog extends AnimalAbstractClass {
 	
 	
 	// must define constructor
+	
 	public Dog(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
@@ -13,4 +14,6 @@ public class Dog extends AnimalAbstractClass {
     void makeSound() {
         System.out.println(name + " is barking.");
     }
+
+	
 }

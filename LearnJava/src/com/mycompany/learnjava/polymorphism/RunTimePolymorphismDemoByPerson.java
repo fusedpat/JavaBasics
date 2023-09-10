@@ -17,7 +17,7 @@ public class RunTimePolymorphismDemoByPerson extends Person {
       Person person = teacher; // teacher object takes the form of person object
       person.walk();
       person.talk(); 
-      //person.teach(); // Can't call teach method as it's not in Person class  
+     // person.teach(); // Can't call teach method as it's not in Person class  
       
       if(person instanceof Teacher) {
     	  System.out.println("person is instance of Teacher");
