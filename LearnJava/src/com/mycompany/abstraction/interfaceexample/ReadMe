@@ -7,12 +7,38 @@ Use an interface when you want to
 5) Use an interface when you want to enforce a specific behavior without providing any implementation details.
 
 
-Abstract class vs interface
-
-abstract classes provide a mix of both abstract and concrete elements, allowing partial implementation and shared functionality, while interfaces provide a pure contract with no implementation details, enforcing complete abstraction and providing a common interface for unrelated classes.
-
-
 
 Through interface 100% abstraction can be achieved. i.e. the implementation details of the class are not known to caller.
 But to demostrate this we need frame work like spring which uses dependency injection. But in the example given here
 abstraction is achieved at the usage level rather than at the implementation level
+
+
+
+----------------------------------------------------------------------------------------
+
+abstract class vs interface
+----------------------------------------------------------------------------------------
+
+In Java 8 and later versions, interfaces have been enhanced to provide default methods and static methods. This addition blurs the lines between interfaces and abstract classes to some extent, as both can now provide method implementations. However, there are still some key differences between abstract classes and interfaces:
+
+Multiple Inheritance:
+
+Interface: In Java, a class can implement multiple interfaces. This allows a class to inherit method signatures and default method implementations from multiple sources.
+Abstract Class: Java does not support multiple inheritance of classes. A class can extend only one abstract class, which means it can inherit method implementations from a single source.
+Fields:
+
+Interface: In Java interfaces, fields are implicitly public, static, and final. They can only hold constant values.
+Abstract Class: Abstract classes can have fields with various access modifiers, including private, protected, and package-private. These fields can hold non-constant values.
+Constructors:
+
+Interface: Interfaces cannot have constructors because they cannot be instantiated directly.
+Abstract Class: Abstract classes can have constructors, and they can be extended by concrete subclasses, which can call their constructors.
+Default Methods:
+
+Interface: Java interfaces can provide default method implementations using the default keyword. These methods allow you to add new methods to an existing interface without breaking existing implementations.
+Abstract Class: Abstract classes have been providing method implementations for a long time. However, default methods in interfaces offer similar functionality, allowing you to provide method implementations in interfaces as well.
+Object Class:
+
+Interface: An interface does not inherit from the Object class, which means it cannot provide methods like hashCode(), equals(), or toString() directly. Implementing classes need to provide these implementations explicitly.
+Abstract Class: An abstract class inherits from the Object class, so it can provide default implementations for methods like hashCode(), equals(), and toString().
+In summary, Java interfaces and abstract classes can both provide method implementations in Java 8 and later versions, but they serve different purposes and have distinct rules and capabilities. The choice between using an interface or an abstract class depends on your specific design requirements and whether you need multiple inheritance, fields, constructors, or other features provided by one or the other.

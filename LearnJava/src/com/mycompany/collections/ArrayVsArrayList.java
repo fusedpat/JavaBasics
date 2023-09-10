@@ -24,7 +24,7 @@ public class ArrayVsArrayList {
         // Limitation of Arrays: Inflexible Size
 
         // Creating an ArrayList to overcome the limitations of arrays
-        ArrayList<Integer> numberList = new ArrayList<>();
+        List<Integer> numberList = new ArrayList<>();
 
         // Adding elements to the ArrayList
         numberList.add(10);
@@ -55,7 +55,7 @@ public class ArrayVsArrayList {
 
 
         // Creating an ArrayList of strings
-        ArrayList<String> namesList = new ArrayList<>();
+        List<String> namesList = new ArrayList<>();
 
         // Adding strings to the ArrayList
         namesList.add("John");
