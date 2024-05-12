@@ -1,3 +1,7 @@
+The student must have a GPA of at least 3.5 (gpa >= 3.5) to qualify for the scholarship.
+Additionally, the student must have participated in either sports (sportsParticipation is true) or community service (communityService is true).
+If the student meets both the GPA requirement and participated in sports or community service, they are eligible for the scholarship.
+
 Exercise 1: Static and Final
 Create a class called "MathUtils" with the following specifications:
 
