@@ -78,8 +78,8 @@ public class StringOperations {
 		String s1 = "hello";
 
 		// trim
-		String stringTrim = "  hello string   ";
-		System.out.println(stringTrim + " welcome");
+		String stringToBeTrimeed = "  hello string   ";
+		System.out.println(stringToBeTrimeed + " welcome");
 		// without trim()
 		System.out.println(s1.trim() + "welcome");// with trim()
 
@@ -92,6 +92,10 @@ public class StringOperations {
 
 		boolean endsWithHello = str.endsWith("Hello");
 		System.out.println(endsWithHello); // Output: false
+		
+		
+		boolean startsWithHello = str.startsWith("Hello");
+		System.out.println(startsWithHello); // Output: true
 
 		String strToDemoContains = "Hello World";
 
